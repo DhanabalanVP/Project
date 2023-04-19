@@ -1,4 +1,4 @@
-####### Word-As-Image for Semantic Typography
+* Word-As-Image for Semantic Typography
 
 
 
