@@ -1,0 +1,45 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Word AS Image</h1>
+   
+       <form action="{{ url_for('word_as_image')}}" method="post">
+        
+        
+        <div class="mb-3">
+            <label class="form-label">Semantic concept</label>
+            <input class="form-control" type="text" name="semantic_concept"
+                 />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Optimized letter</label>
+            <input class="form-control" type="text" name="optimized_letter"
+                />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Seed</label>
+            <input class="form-control" type="number" name="seed"
+                />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Font</label>
+            <select class="form-control" name="font" placeholder="Enter you font" required>
+                <option class="placeholder" selected disabled value="">Select Your Font</option>
+                <option value="KaushanScript-Regular">
+                    KaushanScript-Regular
+                </option>
+                <option value="HobeauxRococeaux-Sherman">
+                    HobeauxRococeaux-Sherman
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="SUBMIT" required />
+        </div>
+        
+    </form>
+    <h2>
+        {{results}}
+    </h2>
+   <body>
+</html>
