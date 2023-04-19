@@ -1,5 +1,4 @@
 Word-As-Image for Semantic Typography
-webpage Huggingface space Youtube
 
 
 
